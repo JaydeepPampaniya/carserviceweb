@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Background Color Change</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    section {
+      height: 800px; /* Adjust this height according to your needs */
+      padding: 20px;
+      margin-top: 50px; /* Ensure content is below the fixed navbar */
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <!-- Your navigation menu goes here -->
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <!-- Your page content goes here -->
+    <h1>Scroll down to see the effect</h1>
+  </section>
+  
+  <script src="myscript.js">
+   
+  </script>
+</body>
+</html>

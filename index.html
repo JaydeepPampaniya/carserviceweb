@@ -5,160 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JP Supraa Hub</title>
+    <title>Car service</title>
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
-
-    <style>
-        /* CSS Reset */
-        body {
-            font-family: 'Alkatra', cursive;
-            margin: 0px;
-            padding: 0px;
-            background-image: url('supra.jpg');
-            background-repeat: no-repeat;
-            height: 1000px;
-            background-size: 1600px 1000px;
-        }
-
-        .left {
-            display: inline-block;
-            /* border: 2px solid red; */
-            position: absolute;
-            left: 34px;
-            top: 15px;
-        }
-
-        .mid {
-            display: block;
-            width: 44%;
-            margin: 20px auto;
-            /* border: 2px solid green; */
-        }
-
-        .right {
-            display: inline-block;
-            /* border: 2px solid yellow; */
-            position: absolute;
-            right: 34px;
-            top: 20px;
-        }
-
-        .navbar {
-            display: inline-block;
-            
-        }
-
-        .navbar li {
-            display: inline-block;
-            font-size: 25px;
-        }
-
-        .navbar li a {
-            color: white;
-            text-decoration: none;
-            padding: 34px 23px;
-        }
-
-        .navbar li a:hover,
-        .navbar li a.active {
-            text-decoration: underline;
-            color: grey;
-
-        }
-
-        .left img {
-            width: 100px;
-            border-radius: 50px;
-
-        }
-
-        .left div {
-            text-align: center;
-            color: white;
-            line-height: 19px;
-            font-size: 26px;
-        }
-
-        .btn {
-            font-family: 'Alkatra', cursive;
-            display: inline-block;
-            margin: 18px 9px;
-            color: white;
-            background-color: black;
-            padding: 4px 14px;
-            border: 2px solid grey;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-
-        .btn:hover,
-        .btn.active {
-            background-color: grey;
-        }
-
-        .container {
-            border: 5px solid rgb(132, 114, 11);
-            background-color: rgb(72, 71, 71);
-            opacity: 0.5;
-            margin: 106px 80px;
-            padding: 75px;
-            width: 33%;
-            border-radius: 30px;
-            color: white;
-        }
-
-        .form-group input {
-            font-family: 'Alkatra', cursive;
-            text-align: center;
-            display: block;
-            width: 300px;
-            padding: 1px;
-            border: 2px solid black;
-            margin: 11px auto;
-            font-size: 15px;
-            border-radius: 8px;
-        }
-
-        .container h1 {
-            text-align: center;
-        }
-
-        .container button {
-            display: block;
-            width: 300px;
-            margin: 20px auto;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-    <header class="header">
+    <div id="satisfaction"></div>
+    <header class="header animate__animated animate__bounceInDown" id="heade">
 
         <!-- left box for logo   -->
-        <div class="left">
-            <img src="https://i.pinimg.com/280x280_RS/d9/a4/1b/d9a41ba52b1251c48c656a9f442b0da1.jpg" alt="">
+        <div class="left" id="header">
+            <img src="logo.png" alt="">
             <div></div>
         </div>
         <!-- mid box for navbar -->
         <div class="mid">
             <ul class="navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">service ceneter</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#satisfaction">Home</a></li>
+                <li><a href="#main"></i>Details</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#service">service ceneter</a></li>
             </ul>
         </div>
 
         <!-- right box for buttons -->
         <div class="right">
-            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+            <button class="btn"><a href="callto:9974177873">Call Us Now</a></button>
+            <button class="btn"><a href="mailto:jaydeeppampaniya77@gmail.com">Email Us</a></button>
         </div>
+
     </header>
-    <div class="container">
-        <h1>Join the best Service of India now</h1>
+    <script src="script.js"></script>
+    <div  class="container">
+        <h1 class="animate__animated animate__bounce">Join best Service of cars in India !! now</h1>
         <form action="noaction.php">
             <div class="form-group">
                 <input type="text" name="" placeholder="Enter your Name">
@@ -167,7 +52,7 @@
                 <input type="text" name="" placeholder="Enter your Rto reg. No.">
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter your car name">
+                <input type="text" name="" placeholder="Enter your car model    ">
             </div>
             <div class="form-group">
                 <input type="datetime-local" placeholder="Book your service time slot">
@@ -176,10 +61,109 @@
                 <input type="email" name="" placeholder="Enter your Email Id" id="email">
             </div>
             <div class="form-group">
-                <input type="number" name="" placeholder="Enter your Phone Number">
+                <input type="tel" name="telephone" placeholder="Enter your Phone Number">
             </div>
             <button class="btn">Submit</button>
         </form>
+    </div>
+    <div class="detail" id="main">
+        <h2>some Car details</h2>
+    </div>
+    <div class="main">
+
+        <div class="part-1 animate__animated animate__fadeInLeft" >
+            <h2 class="harrier">Harrier</h2>
+            <p class="harrier">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis architecto
+                culpa voluptatibus voluptate labore, minima sunt asperiores voluptates atque ex alias distinctio non
+                doloribus illo incidunt eaque laborum perferendi</p>
+        </div>
+        <div class="part-2 animate__animated animate__fadeInRight">
+            <h2 class="fortuner">Fortuner</h2>
+            <p class="fortuner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores quaerat
+                aliquid, sit repudiandae possimus quis sunt quam expedita unde placeat molestiae blanditiis nobis
+                dolorem est obcaecati sequi! Magnam tenetur, veniam sint eaque harum reprehenderit aut. Eveniet tempore
+                amet qui?</p>
+        </div>
+        <div class="part-3 animate__animated animate__fadeInLeft">
+            <h2 class="gloster">Gloster</h2>
+            <p class="gloster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aliquam id voluptates
+                ipsa eos, sed qui animi natus placeat voluptas beatae nesciunt, enim sint quos ratione provident
+                tenetur. Quidem excepturi perspiciatis incidunt explicabo, voluptates culpa enim unde laboriosam
+                numquam. Amet.</p>
+        </div>
+        <div class="part-4">
+            <h2 class="defen">DEFENDER</h2>
+            <video src="defender.mp4" autoplay="background-repeat" muted autoplay></video>
+            <div>
+                <p class="defender">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quasi aliquam et
+                    quam possimus delectus earum repellat perspiciatis quas officiis, non libero illo quis dolor beatae
+                    atque distinctio assumenda quisquam a! Accusantium tenetur quod beatae sunt possimus ad aut iure.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="about animate__animated animate__fadeInUp" id="about">
+        <h1 class="abouth2">
+            About us
+        </h1>
+        <div class="aboutp">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum saepe quidem, quo esse sed,
+                consequatur dicta iusto officiis numquam laboriosam excepturi unde veritatis natus aperiam at repellat
+                recusandae corrupti nemo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque impedit
+                assumenda officia, placeat facere a aliquam laborum blanditiis dicta voluptates, saepe vel laboriosam
+                nisi eligendi! Accusamus necessitatibus perspiciatis animi doloremque nemo eaque quos sed autem cumque
+                possimus. Possimus, soluta, commodi aliquid ipsum numquam consectetur cumque quisquam nemo impedit
+                officiis laborum!</p>
+        </div>
+        <h2>Our Mechanics</h2>
+        <div>
+            <div class="section">
+                <img src="dharmik.jpg" alt="our machanics">
+                <h3>Dharmik chihla</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit id fugit eaque recusandae est nihil,
+                    dicta repellendus fugiat vel, voluptate doloribus quia praesentium, atque ea voluptatum beatae!
+                    Maxime, quas omnis.</p>
+                <span><strong>social media</strong></span>
+                <div class="social">
+                    <a href="#" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="face"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="section">
+                <img src="dharmik.jpg" alt="our machanics">
+                <h3>Dharmik chihla</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima reprehenderit possimus est doloribus
+                    quam iste perspiciatis nesciunt illum id, accusamus impedit. Consectetur deserunt earum dolore fugit
+                    consequuntur quisquam labore praesentium.</p>
+                <span><strong>social media</strong></span>
+                <div class="social">
+                    <a href="#" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="face"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="section">
+                <img src="dharmik.jpg" alt="our machanics">
+                <h3>Dharmik chihla</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem enim harum molestiae odio sint,
+                    aperiam, voluptatum ea, dolor libero dolores exercitationem dignissimos maxime. Voluptatum omnis
+                    exercitationem est dignissimos quo aliquam?</p>
+                <span><strong>social media</strong></span>
+                <div class="social">
+                    <a href="#" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="face"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="service" id="service">
+        <h1>Service center</h1>
+        <p><iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d76586.37738832564!2d72.51653404719885!3d23.03219275289249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20car%20service%20Ahmedabad!5e0!3m2!1sen!2sin!4v1705427079077!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></p>
     </div>
 </body>
 

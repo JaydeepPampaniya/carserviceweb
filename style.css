@@ -1,0 +1,331 @@
+body {
+    font-family: 'Alkatra', cursive;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('supra.jpg');
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: 1550px 1000px;
+    
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    height: 95px;
+    opacity: 1;
+}
+
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 34px;
+    top: 10px;
+}
+
+.mid {
+    display: block;
+    width: 44%;
+    margin: 15px auto;
+    /* border: 2px solid green; */
+}
+
+.right {
+    display: inline-block;
+    /* border: 2px solid yellow; */
+    position: absolute;
+    right: 34px;
+    top: 15px;
+}
+
+.navbar {
+    display: inline-block;
+
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+
+
+.navbar li a:hover,
+.navbar li a:active {
+    text-decoration: underline;
+    color: grey;
+
+}
+
+.left img {
+    width: 100px;
+    border-radius: 50px;
+
+}
+
+.left div {
+    text-align: center;
+    color: white;
+    line-height: 19px;
+    font-size: 26px;
+}
+
+.btn {
+    font-family: 'Alkatra', cursive;
+    display: inline-block;
+    margin: 18px 9px;
+    color: white;
+    background-color: black;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover,
+.btn.active {
+    background-color: grey;
+}
+
+.container {
+    border: 5px solid rgb(132, 114, 11);
+    background-color: rgb(72, 71, 71);
+    opacity: 0.5;
+    margin: 150px 80px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 30px;
+    color: white;
+}
+
+.form-group input {
+    font-family: 'Alkatra', cursive;
+    text-align: center;
+    display: block;
+    width: 90%;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.detail {
+    align-items: center;
+    margin-top: 300px;
+    display: block;
+    /* width: 99%; */
+    margin-left: 650px;
+}
+
+.detail h2 {
+    text-align: center;
+    width: 20%;
+    border: 5px solid rgb(132, 114, 11);
+    border-radius: 5px;
+}
+
+.main {
+    width: 98%;
+    margin-top: 10px;
+    display: inline-block;
+    border: 5px solid rgb(166, 13, 13);
+    border-radius: 30px;
+    margin-left: 10px;
+
+}
+
+.part-1 {
+    width: 48%;
+    float: left;
+    margin: 20px 12px;
+    border: 2px solid rgb(132, 114, 11);
+    border-radius: 5px;
+    background-image: url('harrier.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+
+}
+
+.part-1 .harrier {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.part-2 {
+    width: 48%;
+    float: left;
+    margin: 20px 12px;
+    border: 2px solid rgb(132, 114, 11);
+    border-radius: 5px;
+    background-image: url('fortuner.jpg');
+    background-position: 0px -290px;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    height: 600px;
+
+}
+
+.part-2 .fortuner {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.part-3 {
+    width: 48%;
+    float: left;
+    margin: 20px 12px;
+    border: 2px solid rgb(132, 114, 11);
+    border-radius: 5px;
+    background-image: url('gloster.jpg');
+    background-position: 0px -100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+
+}
+
+.part-3 .gloster {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.part-4 {
+    /* position: relative; */
+    width: 48%;
+    float: left;
+    margin: 20px 12px;
+    border: 2px solid rgb(132, 114, 11);
+    border-radius: 5px;
+
+    height: 600px;
+
+}
+
+.part-4 h2 {
+    position: absolute;
+    color: white;
+    margin-left: 300px;
+    padding: 10px;
+
+}
+
+.main .part-4 div .defender {
+
+    z-index: 1;
+    color: white;
+    margin-top: 110px;
+    text-align: center;
+}
+
+video {
+    position: absolute;
+    width: 47%;
+    z-index: -1;
+    opacity: 0.9;
+}
+.about{
+    width: 96.7%;
+    border: 5px solid rgb(166, 13, 13);
+    margin: 10px 10px;
+    border-radius: 30px;
+    padding: 10px;
+}
+.about h1{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(132, 114, 11);
+}
+.about .aboutp{
+     width: 100%;
+    justify-content: center;
+    text-indent: 50px;
+    display: block;
+    padding: 0px 10px;
+}
+.about h2{
+    text-align: center;
+}
+.about div{
+    width: 100%;
+    margin: 3px;
+}
+.about div .section{
+    border: 4px solid rgb(132, 114, 11);
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    border-radius: 5px;
+    height: 600px;
+}
+.about div .section p{
+    text-align: justify;
+    text-indent: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.about div .section img{
+    width: 55%;
+    height: 280px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.social a i{
+    color: black;
+    font-size: 30px;
+    padding: 5px;
+}
+span{
+    font-size: 20px;
+}
+.social a i:hover{
+    color: rgb(132, 114, 11);
+}
+
+.service{
+    width: 98%;
+    border: 5px solid rgb(166, 13, 13);
+    margin: 10px 10px;
+    border-radius: 30px;
+}
+.service h1{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(99, 81, 81);
+}
+.service p{
+    text-align: center;
+    display: block;
+}
